@@ -4,7 +4,12 @@
 // import Imagecomponent from "./components/image/imagecomponent"
 // import { Cards } from "./components/cards/cards"
 // import {Fruits} from "./components/lists/parentlist"
-import { Items } from "./components/lists/parentlist"
+// import { Items } from "./components/lists/parentlist"
+
+import Bootsrap from "./components/buttonbootstrap/bootstrap1"
+
+import BasicExample from "./components/buttonbootstrap/bootstrap2"
+
 //  const App=()=>{
 //   const islogin=true
 //   return(
@@ -31,7 +36,10 @@ import { Items } from "./components/lists/parentlist"
 //  export default App;
 const App=()=>{
   return(
-  <Items/>
+    <div>
+<BasicExample/>
+<Bootsrap/>
+</div>
   )
 }
 export default App

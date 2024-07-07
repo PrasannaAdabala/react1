@@ -6,10 +6,16 @@
 // import { Cards } from "./components/cards/cards"
 // import {Fruits} from "./components/lists/parentlist"
 // import { Items } from "./components/lists/parentlist"
-import Buttoncomponent from "./components/button/button"
-import { Heading2 } from "./components/headings/heading"
-import { Data } from "./components/javascript/data"
-import Imagecomponent1 from "./props/props"
+// import Buttoncomponent from "./components/button/button"
+// import { Heading2 } from "./components/headings/heading"
+// import { Data } from "./components/javascript/data"
+// import Imagecomponent1 from "./props/props"
+// import {Classbuttoncomponent} from "./components/classcomponents/button1"
+// import { Todos } from "./components/classcomponents/todos/todos"
+// import {UseEffectExample} from "./components/apis/apis"
+import { Productlisting } from "./components/classcomponents/fetch/fetch"
+
+
 
 // import Bootsrap from "./components/buttonbootstrap/bootstrap1"
 
@@ -43,33 +49,12 @@ import Imagecomponent1 from "./props/props"
 const App=()=>{
   return(
     <div>
-      {Data.map((eachproduct)=>{
-        return(
-          <div>
-           <h3>{eachproduct.title}</h3>
-           <h2>{eachproduct.category}</h2>
-           <h2>{eachproduct.description}</h2>
-           <h2>{eachproduct.id}</h2>
-           <Imagecomponent1 src={eachproduct.image}  height={100} width={100} alt={eachproduct.title}/>
-           <Buttoncomponent 
-           text={eachproduct.price}
-           bgcolor="red"
-           color="black"
-           height={30}
-           width={70}
-           onPress={()=>{}}
-           />
-           <Heading2>
-            <h3>hello prasanna</h3>
-            <h3>goodmorning</h3>
-            <h3>how r u</h3>
-           </Heading2>
-
-          </div>
-        )
-      }
-    
-      )}
+      {/* <Classbuttoncomponent/> */}
+      {/* <Todos/> */}
+      {/* <UseEffectExample/> */}
+      <Productlisting/>
+      
+       
     </div>
   )
 }

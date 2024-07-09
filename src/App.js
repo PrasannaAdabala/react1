@@ -13,7 +13,10 @@
 // import {Classbuttoncomponent} from "./components/classcomponents/button1"
 // import { Todos } from "./components/classcomponents/todos/todos"
 // import {UseEffectExample} from "./components/apis/apis"
-import { Productlisting } from "./components/classcomponents/fetch/fetch"
+// import { Productlisting } from "./components/classcomponents/fetch/fetch"
+// import UseStateexample from "./components/functionalcomponents/usestateexample"
+import ControlledForm from "./components/controlledcomonents/forms1"
+
 
 
 
@@ -52,7 +55,13 @@ const App=()=>{
       {/* <Classbuttoncomponent/> */}
       {/* <Todos/> */}
       {/* <UseEffectExample/> */}
-      <Productlisting/>
+      {/* <Productlisting/> */}
+      {/* <UseStateexample/> */}
+      {/* <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1> */}
+    {/* <Form/> */}
+    <ControlledForm/>
       
        
     </div>

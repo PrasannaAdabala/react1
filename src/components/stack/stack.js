@@ -1,26 +1,32 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Homescreen } from "../screens/homescreen"
-import { Aboutscreen } from "../screens/aboutscreen"
-import { Contactscreen } from "../screens/contactscreen"
-import { Settingsscreen } from "../screens/settingsscreen"
-import { Invalidscreen } from "../screens/invalidscreen"
-import Productlisting from "../screens/productlisting"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Homescreen } from "../screens/homescreen";
+import { Aboutscreen } from "../screens/aboutscreen";
+import { Contactscreen } from "../screens/contactscreen";
+import { Settingsscreen } from "../screens/settingsscreen";
+import { Invalidscreen } from "../screens/invalidscreen";
+import Productlisting from "../screens/productlisting";
+import { Doctor } from "../screens/doctorscreen";
+import Engineers from "../screens/engineerscreen";
 
-export const Stack=()=>{
-    return(
-        <div>
-           <BrowserRouter>
-           <Routes>
-            <Route path="/" Component={Homescreen}/>
-            <Route path="/about" Component={Aboutscreen}/>
-            <Route path="/contact" Component={Contactscreen}/>
-            <Route path="/settings" Component={Settingsscreen}/>
-            <Route path="*" Component={Invalidscreen}/>
-            <Route path="/:location/:restaurantid/info" Component={Productlisting}/>
-
-           </Routes>
-           
-           </BrowserRouter>
-        </div>
-    )
-}
+export const Stack = () => {
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homescreen />} />
+          <Route path="/about" element={<Aboutscreen />} />
+          <Route path="/contact" element={<Contactscreen />}>
+            <Route path="doctors" element={<Doctor />} />
+            <Route path="engineers" element={<Engineers />} />
+          </Route>
+          <Route path="/settings" element={<Settingsscreen />} />
+          <Route path="*" element={<Invalidscreen />} />
+          <Route
+            path="/:location/:restaurant/info"
+            element={<Productlisting />}
+          />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
+};

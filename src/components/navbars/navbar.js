@@ -1,5 +1,6 @@
 
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
+import "./navbar.css"
 const Navbar1=()=>{
     return(
         <div>
@@ -8,16 +9,16 @@ const Navbar1=()=>{
         <div className="container-fluid">
           <ul className="navbar-nav">
             <li className="nav-item">
-            <Link to={"/"}>Home</Link>
+            <NavLink to={"/"}>Home</NavLink>
             </li>
             <li className="nav-item">
-            <Link to={"/about"}>About</Link>
+            <NavLink to={"/about"}>About</NavLink>
             </li>
             <li className="nav-item">
-            <Link to={"/contact"}>Contact</Link>
+            <NavLink to={"/contact"}>Contact</NavLink>
             </li>
             <li className="nav-item">
-            <Link to={"/settings"}>settings</Link>
+            <NavLink to={"/settings"}>settings</NavLink>
             </li>
             
             

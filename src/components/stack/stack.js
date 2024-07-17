@@ -7,9 +7,22 @@ import { Invalidscreen } from "../screens/invalidscreen";
 import Productlisting from "../screens/productlisting";
 import { Doctor } from "../screens/doctorscreen";
 import Engineers from "../screens/engineerscreen";
+import { createContext,  useState } from "react";
 
+ export const Profilewrapper = createContext()
 export const Stack = () => {
+  const [profileinfo,setprofileinfo]=useState({
+    name:"prasanna"
+  })
+  const changename=(name)=>{
+    debugger
+    setprofileinfo({...profileinfo, name:name})
+  }
   return (
+    <Profilewrapper.Provider value={{
+      profileinfo:profileinfo,
+      changename,
+    }}>
     <div>
       <BrowserRouter>
         <Routes>
@@ -27,6 +40,9 @@ export const Stack = () => {
           />
         </Routes>
       </BrowserRouter>
+     
     </div>
+    </Profilewrapper.Provider>
+  
   );
 };

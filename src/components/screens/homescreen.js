@@ -1,13 +1,16 @@
 // import { Link } from "react-router-dom"
+import { useContext } from "react"
 import Navbar1 from "../navbars/navbar"
-import { Useeffectexample } from "../useeffect/useeffect"
+import { Profilewrapper } from "../stack/stack"
+// import { Useeffectexample } from "../useeffect/useeffect"
 
 export const Homescreen=()=>{
+    const shareddata=useContext(Profilewrapper)
     return(
         <div>
               <Navbar1/>
-            <h1>welcome to home screen</h1>
-            <Useeffectexample/>
+            <h1>welcome to home screen {shareddata.profileinfo.name}</h1>
+            {/* <Useeffectexample/> */}
             {/* {
                 [1,2,3,4].map((each)=>{
                     return(

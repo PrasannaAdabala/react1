@@ -22,7 +22,9 @@
 // import { Stack } from "react-bootstrap"
 
 // import Navbar from "./components/navbars/navbar"
-import {Stack} from "./components/stack/stack"
+// import { Countrieslist } from "./components/apiproject/apiproject"
+import Rep from "./components/recepies/recepiesapi"
+// import {Stack} from "./components/stack/stack"
 
 
 
@@ -59,10 +61,12 @@ import {Stack} from "./components/stack/stack"
 const App=()=>{
   return(
     <div>
-      <Stack/>
+      {/* <FetchApi/> */}
       {/* <Navbar1/> */}
     
       {/* <Navbar1/> */}
+      {/* <Countrieslist/> */}
+      <Rep/>
       
        </div>
   )

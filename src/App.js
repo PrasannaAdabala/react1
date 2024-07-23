@@ -23,8 +23,17 @@
 
 // import Navbar from "./components/navbars/navbar"
 // import { Countrieslist } from "./components/apiproject/apiproject"
-import Rep from "./components/recepies/recepiesapi"
+// import Gender from "./components/genderapi/genderapi"
+// import Homescreen1 from "./components/navigations/homescreen"
+
+// import Cat, { Table } from "./catapis/catapi"
+// import Stack1 from "./components/navigations/stack"
+// import Rep from "./components/recepies/recepiesapi"
 // import {Stack} from "./components/stack/stack"
+// import Homescreen from "./components/hoc/another"
+// import Reactmemo from "./components/reactmemo/reactmemo"
+import Gender from "./components/genderapi/genderapi"
+// import Username from "./components/sortbyusername/sortbyusername"
 
 
 
@@ -66,7 +75,16 @@ const App=()=>{
     
       {/* <Navbar1/> */}
       {/* <Countrieslist/> */}
-      <Rep/>
+      {/* <Rep/> */}
+      <Gender/>
+      {/* <Homescreen1/> */}
+      {/* <Stack1/> */}
+      {/* <Table/> */}
+      {/* <Cat/> */}
+      {/* <Homescreen/>
+      */}
+      {/* <Reactmemo/>
+      <Username/> */}
       
        </div>
   )

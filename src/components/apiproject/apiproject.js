@@ -22,7 +22,7 @@ const { useEffect, useState } = require("react")
     const countrieshandler=(event)=>{
         setselectcountries(event.target.value)
         Secondapi(event.target.value)
-    }     
+    }       
     const Secondapi=async(selectcountries)=>{
     const response=await axios.get(`https://restcountries.com/v3.1/name/{name} ${selectcountries}`)
     console.log(response)
